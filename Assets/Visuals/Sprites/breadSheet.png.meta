@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: 183871257f2c444c0a303ab02e67c7a3
+guid: 8477417e04e9e430a825591e2fc2d11a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8068882560119875849
-    second: DeadBread_0
+      213: -3118373629460686783
+    second: breadSheet_0
   - first:
-      213: -2779526276089779603
-    second: DeadBread_1
+      213: 3015842904941603242
+    second: breadSheet_1
   - first:
-      213: -7350519582934482063
-    second: DeadBread_2
+      213: 2525248569518943958
+    second: breadSheet_2
   - first:
-      213: 1983018289295026300
-    second: DeadBread_3
+      213: -4761220489172776934
+    second: breadSheet_3
   - first:
-      213: -7674713159983582605
-    second: DeadBread_4
+      213: -2180496416129981142
+    second: breadSheet_4
   - first:
-      213: -2841779112240587583
-    second: DeadBread_5
+      213: 5734229643244399390
+    second: breadSheet_5
   - first:
-      213: 935401164653447418
-    second: DeadBread_6
+      213: -7885662780601325625
+    second: breadSheet_6
+  - first:
+      213: 3948936231977452973
+    second: breadSheet_7
+  - first:
+      213: -6967144416186224154
+    second: breadSheet_8
+  - first:
+      213: -3164601096901805931
+    second: breadSheet_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,7 +101,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -118,7 +127,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DeadBread_0
+      name: breadSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148dc03b4bf49b4d0800000000000000
+      internalID: -3118373629460686783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa92d67b42d6ad920800000000000000
+      internalID: 3015842904941603242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de6db3d13c7b0320800000000000000
+      internalID: 2525248569518943958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a188b8de03fbcedb0800000000000000
+      internalID: -4761220489172776934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a256f82ff025db1e0800000000000000
+      internalID: -2180496416129981142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1be812ba73149f40800000000000000
+      internalID: 5734229643244399390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72db72b7f709290800000000000000
+      internalID: -7885662780601325625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da58fa3a4907dc630800000000000000
+      internalID: 3948936231977452973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: breadSheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f6d5b5ff02950090800000000000000
-      internalID: -8068882560119875849
+      spriteID: 6e1bf56211bbf4f90800000000000000
+      internalID: -6967144416186224154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeadBread_1
+      name: breadSheet_9
       rect:
         serializedVersion: 2
         x: 16
@@ -153,113 +330,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6aedc514932d69d0800000000000000
-      internalID: -2779526276089779603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadBread_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17343a05265bdf990800000000000000
-      internalID: -7350519582934482063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadBread_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c78688ca0a8158b10800000000000000
-      internalID: 1983018289295026300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadBread_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 372b92a1b01fd7590800000000000000
-      internalID: -7674713159983582605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadBread_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 26
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cc56cc24f8ff88d0800000000000000
-      internalID: -2841779112240587583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadBread_6
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 3
-        width: 40
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af8c7ad37663bfc00800000000000000
-      internalID: 935401164653447418
+      spriteID: 5983b53b1141514d0800000000000000
+      internalID: -3164601096901805931
       vertices: []
       indices: 
       edges: []
@@ -267,14 +339,24 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dd58fe49b190e428d81a90333005a982
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      breadSheet_0: -3118373629460686783
+      breadSheet_1: 3015842904941603242
+      breadSheet_2: 2525248569518943958
+      breadSheet_3: -4761220489172776934
+      breadSheet_4: -2180496416129981142
+      breadSheet_5: 5734229643244399390
+      breadSheet_6: -7885662780601325625
+      breadSheet_7: 3948936231977452973
+      breadSheet_8: -6967144416186224154
+      breadSheet_9: -3164601096901805931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

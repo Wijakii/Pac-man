@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,7 +146,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -177,7 +177,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 240
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: DucksScared_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 16
+        y: 240
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,8 +217,8 @@ TextureImporter:
       name: DucksScared_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
+        x: 0
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -260,9 +260,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
-        width: 17
-        height: 49
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,9 +280,9 @@ TextureImporter:
       name: DucksScared_5
       rect:
         serializedVersion: 2
-        x: 17
-        y: 207
-        width: 15
+        x: 16
+        y: 208
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -301,9 +301,9 @@ TextureImporter:
       name: DucksScared_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 191
-        width: 15
+        x: 0
+        y: 192
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -322,10 +322,10 @@ TextureImporter:
       name: DucksScared_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 16
+        y: 192
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,7 +343,7 @@ TextureImporter:
       name: DucksScared_8
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 176
         width: 16
         height: 16
@@ -365,7 +365,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 160
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -386,9 +386,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
-        width: 17
-        height: 49
+        y: 160
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,9 +406,9 @@ TextureImporter:
       name: DucksScared_11
       rect:
         serializedVersion: 2
-        x: 17
-        y: 143
-        width: 15
+        x: 16
+        y: 160
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -427,10 +427,10 @@ TextureImporter:
       name: DucksScared_12
       rect:
         serializedVersion: 2
-        x: 17
-        y: 128
-        width: 15
-        height: 15
+        x: 0
+        y: 144
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: DucksScared_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 16
+        y: 144
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,8 +469,8 @@ TextureImporter:
       name: DucksScared_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 0
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -491,7 +491,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 96
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -512,9 +512,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 17
-        height: 49
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,9 +532,9 @@ TextureImporter:
       name: DucksScared_17
       rect:
         serializedVersion: 2
-        x: 17
-        y: 79
-        width: 15
+        x: 16
+        y: 112
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -553,9 +553,9 @@ TextureImporter:
       name: DucksScared_18
       rect:
         serializedVersion: 2
-        x: 17
-        y: 63
-        width: 15
+        x: 0
+        y: 96
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -574,10 +574,10 @@ TextureImporter:
       name: DucksScared_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 16
+        y: 96
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,8 +595,8 @@ TextureImporter:
       name: DucksScared_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 0
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -617,7 +617,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -637,10 +637,10 @@ TextureImporter:
       name: DucksScared_22
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 15
-        height: 33
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,9 +658,9 @@ TextureImporter:
       name: DucksScared_23
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 15
+        x: 16
+        y: 64
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -679,10 +679,10 @@ TextureImporter:
       name: DucksScared_24
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 15
-        height: 15
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,17 +696,196 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DucksScared_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbfb9837731a489f8db80afe147c6db
+      internalID: -268533219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58eadcc54a61744faad87a14eb9b74dc
+      internalID: 1288801841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b104280ec0b54081bc1714fffb20ee4
+      internalID: -482970405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9047526f19fde41b294aec683449916a
+      internalID: -734645107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5bc8c754bf4facb7f50e3690775dc
+      internalID: 1295268048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d1064c6761b42fb8d104f5678b5961
+      internalID: 1277826369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksScared_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d58f525409a8488eb9e8f125ca83ae6
+      internalID: -535959133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 992b21cdbfed2484ebd1a8655bc48b27
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DucksScared_0: -1427573430467763447
+      DucksScared_1: 7462468892432177221
+      DucksScared_10: -331459885777906579
+      DucksScared_11: -9209422978816116774
+      DucksScared_12: -8281364310563387643
+      DucksScared_13: 7217238390408710626
+      DucksScared_14: 3583740780853793853
+      DucksScared_15: -2736236534187022550
+      DucksScared_16: 8683261767668785759
+      DucksScared_17: 709708204041925774
+      DucksScared_18: 7654339643402585833
+      DucksScared_19: 2967486519781183528
+      DucksScared_2: -3987280065112641492
+      DucksScared_20: 5401137359549246290
+      DucksScared_21: -1051908057501029218
+      DucksScared_22: 2392459556787599608
+      DucksScared_23: 7101330198584774898
+      DucksScared_24: 3538429168946864446
+      DucksScared_25: -268533219
+      DucksScared_26: 1288801841
+      DucksScared_27: -482970405
+      DucksScared_28: -734645107
+      DucksScared_29: 1295268048
+      DucksScared_3: -7860100044055491625
+      DucksScared_30: 1277826369
+      DucksScared_31: -535959133
+      DucksScared_4: -585611521758134169
+      DucksScared_5: -4051601871084366338
+      DucksScared_6: -5206558470254323219
+      DucksScared_7: 1952884529537690636
+      DucksScared_8: 1354123557344278530
+      DucksScared_9: 7004661000235420398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

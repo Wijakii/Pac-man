@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,7 +146,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -177,7 +177,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 240
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: DucksFlashing_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 16
+        y: 240
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,9 +217,9 @@ TextureImporter:
       name: DucksFlashing_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
-        width: 15
+        x: 0
+        y: 224
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,9 +238,9 @@ TextureImporter:
       name: DucksFlashing_3
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 224
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -260,9 +260,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
-        width: 17
-        height: 49
+        y: 208
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,9 +280,9 @@ TextureImporter:
       name: DucksFlashing_5
       rect:
         serializedVersion: 2
-        x: 17
-        y: 207
-        width: 15
+        x: 16
+        y: 208
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -301,9 +301,9 @@ TextureImporter:
       name: DucksFlashing_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 191
-        width: 15
+        x: 0
+        y: 192
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -322,10 +322,10 @@ TextureImporter:
       name: DucksFlashing_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 16
+        y: 192
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,9 +343,9 @@ TextureImporter:
       name: DucksFlashing_8
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 176
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -364,9 +364,9 @@ TextureImporter:
       name: DucksFlashing_9
       rect:
         serializedVersion: 2
-        x: 17
-        y: 160
-        width: 15
+        x: 16
+        y: 176
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -386,9 +386,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
-        width: 17
-        height: 49
+        y: 160
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,9 +406,9 @@ TextureImporter:
       name: DucksFlashing_11
       rect:
         serializedVersion: 2
-        x: 17
-        y: 143
-        width: 15
+        x: 16
+        y: 160
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -427,9 +427,9 @@ TextureImporter:
       name: DucksFlashing_12
       rect:
         serializedVersion: 2
-        x: 17
-        y: 127
-        width: 15
+        x: 0
+        y: 144
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: DucksFlashing_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 16
+        y: 144
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,9 +469,9 @@ TextureImporter:
       name: DucksFlashing_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
-        width: 15
+        x: 0
+        y: 128
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -490,9 +490,9 @@ TextureImporter:
       name: DucksFlashing_15
       rect:
         serializedVersion: 2
-        x: 17
-        y: 96
-        width: 15
+        x: 16
+        y: 128
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -512,9 +512,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 17
-        height: 49
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,9 +532,9 @@ TextureImporter:
       name: DucksFlashing_17
       rect:
         serializedVersion: 2
-        x: 17
-        y: 79
-        width: 15
+        x: 16
+        y: 112
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -553,9 +553,9 @@ TextureImporter:
       name: DucksFlashing_18
       rect:
         serializedVersion: 2
-        x: 17
-        y: 63
-        width: 15
+        x: 0
+        y: 96
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -574,10 +574,10 @@ TextureImporter:
       name: DucksFlashing_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 16
+        y: 96
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,9 +595,9 @@ TextureImporter:
       name: DucksFlashing_20
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 15
+        x: 0
+        y: 80
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -616,9 +616,9 @@ TextureImporter:
       name: DucksFlashing_21
       rect:
         serializedVersion: 2
-        x: 17
-        y: 32
-        width: 15
+        x: 16
+        y: 80
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -637,10 +637,10 @@ TextureImporter:
       name: DucksFlashing_22
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 15
-        height: 33
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,9 +658,9 @@ TextureImporter:
       name: DucksFlashing_23
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 15
+        x: 16
+        y: 64
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -679,10 +679,10 @@ TextureImporter:
       name: DucksFlashing_24
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 15
-        height: 15
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,17 +696,196 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38626e85fc1a247e2b654c6af1095f8c
+      internalID: -253697491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074f1a30a45244190a97a0ce0e5822ba
+      internalID: -240688118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b835c7cc304c54cfda726cd4e8ba9482
+      internalID: 1926510067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc07931f2c1274ee6998c1b912ea68a8
+      internalID: -124342972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56ac8d2af2a64f83865d153ad038854
+      internalID: -1476833970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73ece262e50b4cc081d95b5093b59ca
+      internalID: 1917478196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DucksFlashing_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7add23024da4480b83163a30155622
+      internalID: -2025477213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d5bcefc10e89440da0596989bf46829
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DucksFlashing_0: -8267753060339016134
+      DucksFlashing_1: -8961761052646660425
+      DucksFlashing_10: -4004205202950620047
+      DucksFlashing_11: -2055691661480190929
+      DucksFlashing_12: 5587990522487587537
+      DucksFlashing_13: 2722595528769258705
+      DucksFlashing_14: -6204256452292770746
+      DucksFlashing_15: 4773040467405447466
+      DucksFlashing_16: -7667567237085664853
+      DucksFlashing_17: -7488928253397868142
+      DucksFlashing_18: 4665491527775143530
+      DucksFlashing_19: 3984292077023679729
+      DucksFlashing_2: -9104958534913979914
+      DucksFlashing_20: 5067437640978845871
+      DucksFlashing_21: -2601377475829200359
+      DucksFlashing_22: 4068805383488930028
+      DucksFlashing_23: -3663536275547085232
+      DucksFlashing_24: -4769052534239080309
+      DucksFlashing_25: -253697491
+      DucksFlashing_26: -240688118
+      DucksFlashing_27: 1926510067
+      DucksFlashing_28: -124342972
+      DucksFlashing_29: -1476833970
+      DucksFlashing_3: -8128622439702805365
+      DucksFlashing_30: 1917478196
+      DucksFlashing_31: -2025477213
+      DucksFlashing_4: 5578694305232838041
+      DucksFlashing_5: -6648112015700164031
+      DucksFlashing_6: -2268810686571266621
+      DucksFlashing_7: 3616492710605411095
+      DucksFlashing_8: -3841426959022478531
+      DucksFlashing_9: -3484396791097044368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
