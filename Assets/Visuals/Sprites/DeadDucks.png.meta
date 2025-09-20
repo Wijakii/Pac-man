@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,7 +119,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -169,10 +169,10 @@ TextureImporter:
       name: DeadDucks_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 17
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       name: DeadDucks_2
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -211,10 +211,10 @@ TextureImporter:
       name: DeadDucks_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 14
-        height: 17
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +232,7 @@ TextureImporter:
       name: DeadDucks_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 16
         width: 16
         height: 16
@@ -253,10 +253,10 @@ TextureImporter:
       name: DeadDucks_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 14
-        height: 17
+        x: 80
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,7 @@ TextureImporter:
       name: DeadDucks_6
       rect:
         serializedVersion: 2
-        x: 48
+        x: 96
         y: 16
         width: 16
         height: 16
@@ -295,10 +295,10 @@ TextureImporter:
       name: DeadDucks_7
       rect:
         serializedVersion: 2
-        x: 49
-        y: 0
-        width: 14
-        height: 17
+        x: 112
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,8 +316,8 @@ TextureImporter:
       name: DeadDucks_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -337,10 +337,10 @@ TextureImporter:
       name: DeadDucks_9
       rect:
         serializedVersion: 2
-        x: 65
+        x: 16
         y: 0
-        width: 14
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,8 +358,8 @@ TextureImporter:
       name: DeadDucks_10
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -379,10 +379,10 @@ TextureImporter:
       name: DeadDucks_11
       rect:
         serializedVersion: 2
-        x: 81
+        x: 48
         y: 0
-        width: 14
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,8 +400,8 @@ TextureImporter:
       name: DeadDucks_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 64
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -421,10 +421,10 @@ TextureImporter:
       name: DeadDucks_13
       rect:
         serializedVersion: 2
-        x: 97
+        x: 80
         y: 0
-        width: 14
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,8 +442,8 @@ TextureImporter:
       name: DeadDucks_14
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
+        x: 96
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -463,10 +463,10 @@ TextureImporter:
       name: DeadDucks_15
       rect:
         serializedVersion: 2
-        x: 113
+        x: 112
         y: 0
-        width: 14
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,14 +483,30 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e3972ee32b2f45c4accacb23b8fcec8
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeadDucks_0: 253582092436861367
+      DeadDucks_1: -1511506253110132244
+      DeadDucks_10: -3314506626677467302
+      DeadDucks_11: -8637888029159531705
+      DeadDucks_12: -3085206889178375877
+      DeadDucks_13: -4542539138734993760
+      DeadDucks_14: 9004320688976492373
+      DeadDucks_15: -6235232915199943020
+      DeadDucks_2: 7789032097549936497
+      DeadDucks_3: -9087189256414596213
+      DeadDucks_4: 310327875586326802
+      DeadDucks_5: 6398965896873304766
+      DeadDucks_6: -4006210426080329593
+      DeadDucks_7: 7613557230128958607
+      DeadDucks_8: -6263023849923134874
+      DeadDucks_9: -3162934585034273130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
