@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 37612631413f7411dbad5b9746bfb741
+guid: 77f3e48de216448ee8c374f0a38c3df1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8067846881088359914
-    second: Level Blocks_0
+      213: -1434801676565703740
+    second: Power Pellet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,11 +100,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level Blocks_0
+      name: Power Pellet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -112,20 +112,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2cc409f4b1532497eb21cb30f160ed1e
-      internalID: -479768376
+      spriteID: 4c39a212a7f861ce0800000000000000
+      internalID: -1434801676565703740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Blocks_1
+      name: Power Pellet_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -135,18 +135,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31438c5447c1847a3bbe30f2b2a97d9b
-      internalID: -271456465
+      spriteID: 57e1527cc38ac41d1bb66c90eafc1155
+      internalID: -2064203690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Blocks_2
+      name: Power Pellet_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -156,101 +156,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f6dcd03fe4204a0ca83617f8eed39cb
-      internalID: -424266484
+      spriteID: e716952ac434847c0a84df00ea29b407
+      internalID: 2023344948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Blocks_3
+      name: Power Pellet_3
       rect:
         serializedVersion: 2
         x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ebb880542cf8407bbb12dfecbaced25
-      internalID: -2054218382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Blocks_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36aed91aef4b44f884a80cef31694eb
-      internalID: -531322927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Blocks_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3f508c4b74db4105892d22fded74e98
-      internalID: -680703141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Blocks_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccc928c6508d34ef3acf4bdeed808958
-      internalID: -2035578960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Blocks_7
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 16
         height: 16
@@ -261,17 +177,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f4c51dc6ca24eeba0a2ccf4b199872
-      internalID: 1061832309
+      spriteID: 7d5528bdc98ef450a9ee85b9b1a82e4a
+      internalID: -518070842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Blocks_8
+      name: Power Pellet_4
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 0
         width: 16
         height: 16
@@ -282,17 +198,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1a02e06b629349b7880d571b7157853
-      internalID: 1427313613
+      spriteID: 2065e941d46c948c6ae7398f2f75d73d
+      internalID: -134431333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Blocks_9
+      name: Power Pellet_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 80
         y: 0
         width: 16
         height: 16
@@ -303,8 +219,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e2e69ba5d4840b9aa1ac675dc39ace
-      internalID: 265420061
+      spriteID: d80f80db9a9874cb19b6d626351c8d9f
+      internalID: -1031897714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Pellet_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c556b119f90c346df9f030d7945c295d
+      internalID: 1088810657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Pellet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd52a27ad67644ad958ee10731cc0d1
+      internalID: -2066619111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power Pellet_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4e70b1870e043fba03ab40f97646cf
+      internalID: 1057592471
       vertices: []
       indices: 
       edges: []
@@ -312,7 +291,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e1be55fddeb2845428cbf1d890159026
+    spriteID: 408cf70d2414b454fa2e64f97ae2bbf5
     internalID: 0
     vertices: []
     indices: 
@@ -320,16 +299,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Level Blocks_0: -479768376
-      Level Blocks_1: -271456465
-      Level Blocks_2: -424266484
-      Level Blocks_3: -2054218382
-      Level Blocks_4: -531322927
-      Level Blocks_5: -680703141
-      Level Blocks_6: -2035578960
-      Level Blocks_7: 1061832309
-      Level Blocks_8: 1427313613
-      Level Blocks_9: 265420061
+      Power Pellet_0: -1434801676565703740
+      Power Pellet_1: -2064203690
+      Power Pellet_2: 2023344948
+      Power Pellet_3: -518070842
+      Power Pellet_4: -134431333
+      Power Pellet_5: -1031897714
+      Power Pellet_6: 1088810657
+      Power Pellet_7: -2066619111
+      Power Pellet_8: 1057592471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
