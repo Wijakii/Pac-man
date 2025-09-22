@@ -13,6 +13,9 @@ public class MovementController : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator animator;
     
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    
     private float moveDuration = 1f;
     
     private int i = 0;
@@ -22,6 +25,7 @@ public class MovementController : MonoBehaviour
     {
         transform.position = waypoints[0].position;
         Debug.Log("pac man starting at "+transform.position);
+        audioSource.Play();
     }
 
     // Update is called once per frame
