@@ -85,7 +85,7 @@ public class PacStudentController : MonoBehaviour
     private bool walkable(Vector3Int target)
     {
         TileBase tile = tilemap.GetTile(target);
-        Debug.Log(tile);
+        
 
         if  (tile == null) return false;
         
