@@ -36,4 +36,9 @@ public class Tweener : MonoBehaviour
             activeTween = null;
         }
     }
+
+    public void ResetTween()
+    {
+        activeTween = null;
+    }
 }

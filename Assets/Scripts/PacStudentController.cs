@@ -12,19 +12,25 @@ public class PacStudentController : MonoBehaviour
     public Grid grid;
     public Tilemap tilemap;
     public List<TileBase> walkableTiles = new List<TileBase>();
-    public List<TileBase> pellets = new List<TileBase>();
+    public List<TileBase> pelletList = new List<TileBase>();
+    public TileBase pellet;
+    public TileBase powerPellet;
+    public TileBase noPellet;
     public Animator animator;
     public AudioSource moveAudio;
     public AudioSource eatAudio;
-    public ParticleSystem particles;
+    public AudioSource wallBumpAudio;
+    public ParticleSystem movementParticles;
+    public ParticleSystem wallParticles;
     
     [Header("Movement")]
     public float moveSpeed = 0.5f;
-    
-    private Vector3Int gridPosition;
-    private Vector2Int currentInput = Vector2Int.zero;
+
+    public Vector3Int gridPosition;
+    public Vector2Int currentInput = Vector2Int.zero;
     private Vector2Int lastInput = Vector2Int.zero;
     private Vector3Int lastPosition;
+    private bool hitWall = false;
     
     
     
@@ -82,7 +88,7 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
-    private bool walkable(Vector3Int target)
+    public bool walkable(Vector3Int target)
     {
         TileBase tile = tilemap.GetTile(target);
         
@@ -95,18 +101,18 @@ public class PacStudentController : MonoBehaviour
 
     private void manageParticles()
     {
-        var emmision =  particles.emission;
+        var emmision =  movementParticles.emission;
         
         emmision.enabled = tweener.HasActiveTween;
 
-        if (!particles.isPlaying)
+        if (!movementParticles.isPlaying)
         {
-            particles.Play();
+            movementParticles.Play();
         }
         
     }
-    
-    private void lerpTo(Vector3Int target)
+
+    public void lerpTo(Vector3Int target)
     {
         Vector3 startPosition = grid.GetCellCenterWorld(gridPosition);
         Vector3 targetPosition = grid.GetCellCenterWorld(target);
@@ -116,7 +122,7 @@ public class PacStudentController : MonoBehaviour
         AnimationDirection(targetPosition - startPosition);
     }
 
-    private Vector3Int TargetCell(Vector2Int direction)
+    public Vector3Int TargetCell(Vector2Int direction)
     {
         return new Vector3Int(gridPosition.x + direction.x, gridPosition.y + direction.y, gridPosition.z);
     }
@@ -130,10 +136,22 @@ public class PacStudentController : MonoBehaviour
         {
             currentInput = lastInput;
             lerpTo(lastTarget);
+            hitWall = false;
         }
         else if (currentInput != Vector2Int.zero && walkable(lastTarget))
         {
             lerpTo(currentTarget);
+            hitWall = false;
+        }
+        else
+        {
+            if (!hitWall)
+            {
+                wallParticles.transform.position = transform.position;
+                wallParticles.Play();
+                wallBumpAudio.PlayOneShot(wallBumpAudio.clip);
+                hitWall = true;
+            }
         }
     }
 
@@ -142,7 +160,21 @@ public class PacStudentController : MonoBehaviour
         if (gridPosition != lastPosition)
         {
             TileBase tile = tilemap.GetTile(gridPosition);
-            if (pellets.Contains(tile)) eatAudio.PlayOneShot(eatAudio.clip);
+
+            if (tile == pellet)
+            {
+                eatAudio.PlayOneShot(eatAudio.clip);
+                ScoreManager.instance.AddScore(10);
+                tilemap.SetTile(gridPosition, noPellet);
+                
+            }
+            else if (tile == powerPellet)
+            {
+                eatAudio.PlayOneShot(eatAudio.clip);
+                ScoreManager.instance.AddScore(50);
+                tilemap.SetTile(gridPosition, noPellet);
+                //get pilled
+            }
             lastPosition = gridPosition;
         }
     }
@@ -152,7 +184,7 @@ public class PacStudentController : MonoBehaviour
     private void audioManagement()
     {
         bool moving = tweener.HasActiveTween;
-        bool onPellet = pellets.Contains(tilemap.GetTile(gridPosition));
+        bool onPellet = pelletList.Contains(tilemap.GetTile(gridPosition));
 
         if (moving && !onPellet)
         {
