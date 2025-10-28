@@ -11,11 +11,12 @@ public class PacStudentController : MonoBehaviour
 
     public Grid grid;
     public Tilemap tilemap;
-    public List<TileBase> walls = new List<TileBase>();
+    public List<TileBase> walkableTiles = new List<TileBase>();
     public List<TileBase> pellets = new List<TileBase>();
     public Animator animator;
     public AudioSource moveAudio;
     public AudioSource eatAudio;
+    public ParticleSystem particles;
     
     [Header("Movement")]
     public float moveSpeed = 0.5f;
@@ -23,6 +24,7 @@ public class PacStudentController : MonoBehaviour
     private Vector3Int gridPosition;
     private Vector2Int currentInput = Vector2Int.zero;
     private Vector2Int lastInput = Vector2Int.zero;
+    private Vector3Int lastPosition;
     
     
     
@@ -32,8 +34,11 @@ public class PacStudentController : MonoBehaviour
     {
         gridPosition = grid.WorldToCell(transform.position);
         transform.position = grid.GetCellCenterWorld(gridPosition);
-        currentInput = Vector2Int.right;
+        currentInput = Vector2Int.zero;
         lastInput = Vector2Int.zero;
+        lastPosition = gridPosition;
+        
+        animator.SetInteger("Direction", 1);
         
     }
 
@@ -47,10 +52,11 @@ public class PacStudentController : MonoBehaviour
             move();
         }
         
-        bool moving = tweener.HasActiveTween;
-        bool eatable = eatCheck();
+        eatCheck();
         
-        audioManagement(moving, eatable);
+        audioManagement();
+        
+        manageParticles();
         
         
     }
@@ -59,34 +65,47 @@ public class PacStudentController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            currentInput = Vector2Int.up;
+            lastInput = Vector2Int.up;
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            currentInput = Vector2Int.left;
+            lastInput = Vector2Int.left;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            currentInput = Vector2Int.down;
+            lastInput = Vector2Int.down;
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            currentInput = Vector2Int.right;
+            lastInput = Vector2Int.right;
         }
     }
 
     private bool walkable(Vector3Int target)
     {
         TileBase tile = tilemap.GetTile(target);
+        Debug.Log(tile);
 
-        if (walls.Contains(tile))
-        {
-            return false;
-        }
-        return true;
+        if  (tile == null) return false;
+        
+        if (walkableTiles.Contains(tile)) return true;
+        return false;
     }
 
+    private void manageParticles()
+    {
+        var emmision =  particles.emission;
+        
+        emmision.enabled = tweener.HasActiveTween;
+
+        if (!particles.isPlaying)
+        {
+            particles.Play();
+        }
+        
+    }
+    
     private void lerpTo(Vector3Int target)
     {
         Vector3 startPosition = grid.GetCellCenterWorld(gridPosition);
@@ -97,45 +116,51 @@ public class PacStudentController : MonoBehaviour
         AnimationDirection(targetPosition - startPosition);
     }
 
+    private Vector3Int TargetCell(Vector2Int direction)
+    {
+        return new Vector3Int(gridPosition.x + direction.x, gridPosition.y + direction.y, gridPosition.z);
+    }
+
     private void move()
     {
-        if (lastInput != Vector2Int.zero && walkable(gridPosition + (Vector3Int)lastInput))
+        Vector3Int currentTarget = TargetCell(currentInput);
+        Vector3Int lastTarget = TargetCell(lastInput);
+
+        if (lastInput != Vector2Int.zero && walkable(lastTarget))
         {
             currentInput = lastInput;
-            lerpTo(gridPosition + (Vector3Int)lastInput);
-            
+            lerpTo(lastTarget);
         }
-        else if (currentInput != Vector2Int.zero && walkable(gridPosition + (Vector3Int)currentInput))
+        else if (currentInput != Vector2Int.zero && walkable(lastTarget))
         {
-            lerpTo(gridPosition + (Vector3Int)currentInput);
+            lerpTo(currentTarget);
         }
     }
 
-    private bool eatCheck()
-    { 
-        TileBase tile = tilemap.GetTile(gridPosition);
-        return  pellets.Contains(tile);
-    }
-
-    private void audioManagement(bool moving, bool isEatable)
+    private void eatCheck()
     {
-        if (moving)
+        if (gridPosition != lastPosition)
         {
-            if (isEatable)
-            {
-                if(!eatAudio.isPlaying) eatAudio.Play();
-                if(moveAudio.isPlaying) moveAudio.Stop();
-            }
-            else
-            {
-                if(eatAudio.isPlaying) eatAudio.Stop();
-                if(moveAudio.isPlaying) moveAudio.Play();
-            }
+            TileBase tile = tilemap.GetTile(gridPosition);
+            if (pellets.Contains(tile)) eatAudio.PlayOneShot(eatAudio.clip);
+            lastPosition = gridPosition;
+        }
+    }
+    
+    
+    
+    private void audioManagement()
+    {
+        bool moving = tweener.HasActiveTween;
+        bool onPellet = pellets.Contains(tilemap.GetTile(gridPosition));
+
+        if (moving && !onPellet)
+        {
+            if(!moveAudio.isPlaying) moveAudio.Play();
         }
         else
         {
-            if(eatAudio.isPlaying) eatAudio.Stop();
-            if(moveAudio.isPlaying) moveAudio.Stop();
+            if(!moveAudio.isPlaying) moveAudio.Stop();
         }
     }
     
