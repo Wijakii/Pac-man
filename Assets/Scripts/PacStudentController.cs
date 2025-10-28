@@ -8,7 +8,6 @@ public class PacStudentController : MonoBehaviour
     
     [Header("Data References")]
     public Tweener tweener;
-
     public Grid grid;
     public Tilemap tilemap;
     public List<TileBase> walkableTiles = new List<TileBase>();
@@ -31,6 +30,7 @@ public class PacStudentController : MonoBehaviour
     private Vector2Int lastInput = Vector2Int.zero;
     private Vector3Int lastPosition;
     private bool hitWall = false;
+    public PowerPelletManager powerPelletManager;
     
     
     
@@ -164,21 +164,25 @@ public class PacStudentController : MonoBehaviour
             if (tile == pellet)
             {
                 eatAudio.PlayOneShot(eatAudio.clip);
+                
                 ScoreManager.instance.AddScore(10);
                 tilemap.SetTile(gridPosition, noPellet);
                 
             }
-            else if (tile == powerPellet)
-            {
-                eatAudio.PlayOneShot(eatAudio.clip);
-                ScoreManager.instance.AddScore(50);
-                tilemap.SetTile(gridPosition, noPellet);
-                //get pilled
-            }
             lastPosition = gridPosition;
         }
     }
-    
+
+    private void onTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PowerPill"))
+        {
+            eatAudio.PlayOneShot(eatAudio.clip);
+            tilemap.SetTile(gridPosition, noPellet);
+            powerPelletManager.ActivatePowerPellet();
+            //get pilled
+        }
+    }
     
     
     private void audioManagement()

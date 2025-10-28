@@ -42,6 +42,7 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", highScore);
             UpdateUI();
         }
+        UpdateUI();
     }
 
     public void ResetScore()
