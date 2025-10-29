@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class PacStudentController : MonoBehaviour
 {
-    
+
     [Header("Data References")]
     public Tweener tweener;
     public Grid grid;
@@ -24,6 +24,10 @@ public class PacStudentController : MonoBehaviour
     
     [Header("Movement")]
     public float moveSpeed = 0.5f;
+    
+    [Header("player stuff")]
+    public Vector3 startPosition;
+    public ParticleSystem deathParticles;
 
     public Vector3Int gridPosition;
     public Vector2Int currentInput = Vector2Int.zero;
@@ -31,32 +35,43 @@ public class PacStudentController : MonoBehaviour
     private Vector3Int lastPosition;
     private bool hitWall = false;
     public PowerPelletManager powerPelletManager;
+    private bool isDead = false;
+    private int lastDirection = -1;
     
-    
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
+        
+        startPosition = transform.position;
+        
         gridPosition = grid.WorldToCell(transform.position);
         transform.position = grid.GetCellCenterWorld(gridPosition);
         currentInput = Vector2Int.zero;
         lastInput = Vector2Int.zero;
         lastPosition = gridPosition;
         
+        
         animator.SetInteger("Direction", 1);
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (isDead) return;
+        if (!GameStart.instance.gameStarted) return;
+        
         GetInput();
-
         if (tweener.HasActiveTween == false)
         {
             move();
+            
         }
+
+        if (currentInput != Vector2Int.zero || lastInput != Vector2Int.zero)
+        {
+            Vector2 dir = (currentInput != Vector2Int.zero) ? currentInput : lastInput;
+            AnimationDirection(new Vector3(dir.x, dir.y, 0));
+        }
+        
         
         eatCheck();
         
@@ -99,6 +114,39 @@ public class PacStudentController : MonoBehaviour
         return false;
     }
 
+    private void LoseLife()
+    {
+        if (isDead) return;
+        isDead = true;
+        
+        tweener.ResetTween();
+        movementParticles.Stop();
+        
+        animator.SetTrigger("Dead");
+        deathParticles.transform.position = transform.position;
+        deathParticles.Play();
+        
+        
+        StartCoroutine(RespawnRoutine());
+    }
+
+    private IEnumerator RespawnRoutine()
+    {
+        yield return new WaitForSeconds(3f);
+        
+        transform.position = startPosition;
+        gridPosition = grid.WorldToCell(transform.position);
+        tweener.ResetTween();
+
+        foreach (GhostController ghost in PowerPelletManager.instance.ghosts)
+        {
+            ghost.resetGhost();
+        }
+        
+        isDead = false;
+        
+    }
+    
     private void manageParticles()
     {
         var emmision =  movementParticles.emission;
@@ -129,6 +177,7 @@ public class PacStudentController : MonoBehaviour
 
     private void move()
     {
+        if (isDead) return;
         Vector3Int currentTarget = TargetCell(currentInput);
         Vector3Int lastTarget = TargetCell(lastInput);
 
@@ -152,6 +201,7 @@ public class PacStudentController : MonoBehaviour
                 wallBumpAudio.PlayOneShot(wallBumpAudio.clip);
                 hitWall = true;
             }
+            
         }
     }
 
@@ -173,14 +223,26 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
-    private void onTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("PowerPill"))
+        if (collision.CompareTag("PowerPellet"))
         {
             eatAudio.PlayOneShot(eatAudio.clip);
-            tilemap.SetTile(gridPosition, noPellet);
-            powerPelletManager.ActivatePowerPellet();
             //get pilled
+        }
+
+        if (collision.CompareTag("Ghost"))
+        {
+            GhostController ghost = collision.gameObject.GetComponent<GhostController>();
+
+            if (ghost.currentState == GhostState.Normal)
+            {
+                LoseLife();
+            }
+            else if (ghost.currentState == GhostState.Scared || ghost.currentState == GhostState.Recovering)
+            {
+                ghost.Die();
+            }
         }
     }
     
@@ -202,6 +264,7 @@ public class PacStudentController : MonoBehaviour
     
     private void AnimationDirection(Vector3 direction)
     {
+        if (isDead) return;
         Vector2 dir = new Vector2(direction.x, direction.y);
         
         dir.Normalize();

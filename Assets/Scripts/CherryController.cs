@@ -29,7 +29,7 @@ public class CherryController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!GameStart.instance.gameStarted) return;
     }
 
     private void determineBounds()
